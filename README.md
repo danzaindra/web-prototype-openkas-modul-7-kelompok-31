@@ -125,3 +125,7 @@ Pengujian dilakukan secara manual untuk memastikan fitur utama berjalan dengan b
 - Tampilan website pada ukuran layar desktop dan perangkat mobile.
 
 Catatan: Aplikasi masih berupa prototipe, sehingga data anggota belum tersimpan secara permanen.
+
+12. Catatan Pengembangan
+
+Prototipe OpenKas dikembangkan menggunakan React dan Vite. Fitur yang tersedia meliputi navigasi halaman, pencarian anggota, formulir penambahan anggota, dan pop-up konfirmasi. Aplikasi masih menggunakan data sementara dan belum terhubung ke database.
