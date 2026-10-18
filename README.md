@@ -1,131 +1,95 @@
-OpenKas
+# OpenKas
 
-1. Deskripsi Proyek
+OpenKas merupakan prototipe website untuk membantu pengelolaan kas dan data anggota. Proyek ini dikembangkan untuk memenuhi tugas Modul 7, yaitu mengubah desain Figma menjadi prototipe web interaktif.
 
-OpenKas merupakan prototipe website untuk membantu pengelolaan kas dan data anggota. Proyek ini dibuat untuk memenuhi tugas Modul 7, yaitu mengubah desain Figma menjadi prototipe web interaktif.
+## Fitur
 
-2. Teknologi yang Digunakan
+- Halaman landing page
+- Halaman login untuk simulasi masuk ke aplikasi
+- Halaman daftar kelas dan anggota
+- Pencarian anggota berdasarkan nama atau nomor anggota
+- Formulir penambahan anggota
+- Modal konfirmasi setelah anggota berhasil ditambahkan
+- Tampilan yang disesuaikan untuk desktop dan perangkat seluler
 
-React
+> **Catatan:** OpenKas masih berupa prototipe dan belum terhubung ke backend atau database permanen. Data yang ditambahkan bersifat sementara dan tidak disimpan secara permanen.
 
-Vite
+## Teknologi
 
-JavaScript
+- React
+- Vite
+- JavaScript
+- CSS
+- Git dan GitHub
 
-CSS
+## Desain Figma
 
-Git dan GitHub
+Desain awal OpenKas dapat dilihat melalui tautan berikut:
 
-3. Figma Design
+[OpenKas — Figma Design](https://www.figma.com/design/xC4Llgug2n0q5vl4KT9XZq/OpenKas?m=auto&t=bXCwy4FWypNSQzzk-6)
 
-Desain awal proyek dapat dilihat melalui tautan berikut:
+## Cara Menjalankan Proyek
 
-https://www.figma.com/design/xC4Llgug2n0q5vl4KT9XZq/OpenKas?m=auto&t=bXCwy4FWypNSQzzk-6
+Pastikan [Node.js](https://nodejs.org/) sudah terpasang di komputer.
 
-4. Fitur Prototipe
+1. Clone repositori:
 
-Halaman utama OpenKas
+   ```bash
+   git clone https://github.com/danzaindra/web-prototype-openkas-modul-7-kelompok-31.git
+   ```
 
-Halaman login
+2. Masuk ke folder proyek:
 
-Halaman daftar kelas dan anggota
+   ```bash
+   cd web-prototype-openkas-modul-7-kelompok-31
+   ```
 
-Formulir tambah anggota
+3. Instal dependensi:
 
-Pencarian anggota
+   ```bash
+   npm install
+   ```
 
-Modal konfirmasi keberhasilan penambahan anggota
+4. Jalankan aplikasi:
 
-Catatan: fitur pada prototipe belum menggunakan backend atau database permanen.
+   ```bash
+   npm run dev
+   ```
 
-5. Cara Menjalankan Proyek
+5. Buka alamat lokal yang ditampilkan di terminal. Biasanya alamatnya adalah `http://localhost:5173/`.
 
-Pastikan Node.js sudah terpasang di komputer.
+## Kontribusi Anggota
 
-Clone repositori:
+| Nama | Kontribusi |
+| --- | --- |
+| Rafi Rizky Santosa | Halaman Tambah Anggota 1 dan Tambah Anggota 2 |
+| Kinta Desvina Nur Saliha | Halaman Login dan Error 404 |
+| Zaidan Ahmad Zaindra | Halaman Landing Page dan Daftar Kelas |
+| Priska Andriani | Halaman Daftar Anggota dan Tambah Anggota Success |
 
-git clone https://github.com/danzaindra/web-prototype-openkas-modul-7-kelompok-31.git
+## Penggunaan AI
 
-Masuk ke folder proyek:
+AI digunakan sebagai alat bantu selama proses pengembangan, antara lain untuk membantu penulisan kode, pengembangan interaksi, dan mencari solusi ketika terjadi kesalahan. Saran dari AI diperiksa kembali sebelum diterapkan. Contoh prompt yang digunakan dan perbaikan manual yang dilakukan dicantumkan dalam laporan proyek sesuai proses pengerjaan yang sebenarnya.
 
-cd web-prototype-openkas-modul-7-kelompok-31
+## Pengujian
 
-Instal dependensi:
+Pengujian dilakukan secara manual melalui browser lokal. Beberapa hal yang perlu diperiksa meliputi:
 
-npm install
+- Navigasi antarhalaman
+- Alur login pada prototipe
+- Pencarian anggota
+- Penambahan anggota melalui formulir
+- Modal konfirmasi setelah anggota berhasil ditambahkan
+- Tampilan pada ukuran layar yang berbeda
 
-Jalankan aplikasi:
+Hasil pengujian perlu dicatat sesuai kondisi aplikasi saat diuji. Jangan menyatakan suatu fitur berhasil apabila fitur tersebut belum diperiksa atau masih mengalami kendala.
 
-npm run dev
+## Pengembangan Proyek
 
-Buka alamat lokal yang ditampilkan di terminal, biasanya http://localhost:5173/.
+Pengembangan dilakukan secara bertahap menggunakan Git dan GitHub. Perubahan kode, penambahan fitur, perbaikan, dan dokumentasi dicatat melalui commit agar proses pengembangan dapat ditelusuri.
 
-6. Kontribusi Anggota
+## Batasan Prototipe
 
-Rafi Rizky Santosa: Halaman Tambah Anggota 1 & Tambah Anggota 2
-Kinta Desvina Nur Saliha: Halaman Login & Error 404
-Zaidan Ahmad Zaindra: Halaman Landing Page & Daftar Kelas
-Priska Andriani: Halaman Daftar Anggota & Tambah Anggota Success
-
-7. Penggunaan AI
-
-AI digunakan sebagai alat bantu dalam pembuatan struktur kode, pengembangan interaksi, dan perbaikan kesalahan. Prompt yang benar-benar digunakan serta hasil perbaikan manual akan didokumentasikan dalam laporan proyek.
-
-8. Catatan Pengembangan
-
-Proyek dikembangkan secara bertahap menggunakan Git. Perubahan kode, penambahan fitur, perbaikan, dan dokumentasi dicatat melalui commit.
-
-9. Hasil Pengujian
-
-Pengujian dilakukan secara manual pada prototipe website OpenKas melalui browser lokal.
-
-1. Navigasi halaman: berfungsi.
-2. Login: berfungsi sesuai alur prototipe.
-3. Daftar anggota dan pencarian: berfungsi.
-4. Formulir tambah anggota dan modal konfirmasi berhasil: berfungsi.
-5. Tampilan responsif: diuji pada ukuran layar yang berbeda.
-
-Catatan: hasil pengujian responsivitas perlu disesuaikan dengan hasil pengujian yang benar-benar dilakukan.
-
-10. Fitur Prototipe
-
-Halaman login untuk simulasi masuk ke aplikasi.
-
-Navigasi halaman.
-
-Pencarian data anggota.
-
-Formulir untuk menambahkan anggota.
-
-Pop-up konfirmasi setelah anggota berhasil ditambahkan.
-
-Tampilan yang disesuaikan untuk layar desktop dan perangkat seluler.
-
-Cara Menjalankan Proyek
-
-Pastikan Node.js sudah terpasang.
-
-Buka terminal pada folder proyek.
-
-Jalankan npm install.
-
-Jalankan npm run dev.
-
-Buka alamat lokal yang muncul di terminal, biasanya http://localhost:5173/.
-
-Catatan: Prototipe ini menggunakan data sementara di sisi aplikasi dan belum terhubung ke database.
-
-11. Pengujian Aplikasi
-
-Pengujian dilakukan secara manual untuk memastikan fitur utama berjalan dengan baik, meliputi:
-- Login dan navigasi halaman.
-- Pencarian anggota berdasarkan nama atau nomor anggota.
-- Penambahan anggota melalui formulir.
-- Tampilan pop-up ketika anggota berhasil ditambahkan.
-- Tampilan website pada ukuran layar desktop dan perangkat mobile.
-
-Catatan: Aplikasi masih berupa prototipe, sehingga data anggota belum tersimpan secara permanen.
-
-12. Catatan Pengembangan
-
-Prototipe OpenKas dikembangkan menggunakan React dan Vite. Fitur yang tersedia meliputi navigasi halaman, pencarian anggota, formulir penambahan anggota, dan pop-up konfirmasi. Aplikasi masih menggunakan data sementara dan belum terhubung ke database.
+- Login hanya digunakan untuk simulasi dan belum terhubung ke sistem autentikasi.
+- Data anggota masih bersifat sementara.
+- Aplikasi belum menggunakan backend atau database permanen.
