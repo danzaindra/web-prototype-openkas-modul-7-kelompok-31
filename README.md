@@ -86,3 +86,42 @@ Pengujian dilakukan secara manual pada prototipe website OpenKas melalui browser
 5. Tampilan responsif: diuji pada ukuran layar yang berbeda.
 
 Catatan: hasil pengujian responsivitas perlu disesuaikan dengan hasil pengujian yang benar-benar dilakukan.
+
+10. Fitur Prototipe
+
+Halaman login untuk simulasi masuk ke aplikasi.
+
+Navigasi halaman.
+
+Pencarian data anggota.
+
+Formulir untuk menambahkan anggota.
+
+Pop-up konfirmasi setelah anggota berhasil ditambahkan.
+
+Tampilan yang disesuaikan untuk layar desktop dan perangkat seluler.
+
+Cara Menjalankan Proyek
+
+Pastikan Node.js sudah terpasang.
+
+Buka terminal pada folder proyek.
+
+Jalankan npm install.
+
+Jalankan npm run dev.
+
+Buka alamat lokal yang muncul di terminal, biasanya http://localhost:5173/.
+
+Catatan: Prototipe ini menggunakan data sementara di sisi aplikasi dan belum terhubung ke database.
+
+11. Pengujian Aplikasi
+
+Pengujian dilakukan secara manual untuk memastikan fitur utama berjalan dengan baik, meliputi:
+- Login dan navigasi halaman.
+- Pencarian anggota berdasarkan nama atau nomor anggota.
+- Penambahan anggota melalui formulir.
+- Tampilan pop-up ketika anggota berhasil ditambahkan.
+- Tampilan website pada ukuran layar desktop dan perangkat mobile.
+
+Catatan: Aplikasi masih berupa prototipe, sehingga data anggota belum tersimpan secara permanen.
