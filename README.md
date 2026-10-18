@@ -56,7 +56,7 @@ Pastikan [Node.js](https://nodejs.org/) sudah terpasang di komputer.
    npm run dev
    ```
 
-5. Buka alamat lokal yang ditampilkan di terminal. Biasanya alamatnya adalah `http://localhost:5173/`.
+5. Buka alamat lokal yang ditampilkan di terminal. Alamatnya adalah `http://localhost:5174/`.
 
 ## Kontribusi Anggota
 
