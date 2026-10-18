@@ -1,16 +1,88 @@
-# React + Vite
+OpenKas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Deskripsi Proyek
 
-Currently, two official plugins are available:
+OpenKas merupakan prototipe website untuk membantu pengelolaan kas dan data anggota. Proyek ini dibuat untuk memenuhi tugas Modul 7, yaitu mengubah desain Figma menjadi prototipe web interaktif.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+2. Teknologi yang Digunakan
 
-## React Compiler
+React
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Vite
 
-## Expanding the ESLint configuration
+JavaScript
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+CSS
+
+Git dan GitHub
+
+3. Figma Design
+
+Desain awal proyek dapat dilihat melalui tautan berikut:
+
+https://www.figma.com/design/xC4Llgug2n0q5vl4KT9XZq/OpenKas?m=auto&t=bXCwy4FWypNSQzzk-6
+
+4. Fitur Prototipe
+
+Halaman utama OpenKas
+
+Halaman login
+
+Halaman daftar kelas dan anggota
+
+Formulir tambah anggota
+
+Pencarian anggota
+
+Modal konfirmasi keberhasilan penambahan anggota
+
+Catatan: fitur pada prototipe belum menggunakan backend atau database permanen.
+
+5. Cara Menjalankan Proyek
+
+Pastikan Node.js sudah terpasang di komputer.
+
+Clone repositori:
+
+git clone https://github.com/danzaindra/web-prototype-openkas-modul-7-kelompok-31.git
+
+Masuk ke folder proyek:
+
+cd web-prototype-openkas-modul-7-kelompok-31
+
+Instal dependensi:
+
+npm install
+
+Jalankan aplikasi:
+
+npm run dev
+
+Buka alamat lokal yang ditampilkan di terminal, biasanya http://localhost:5173/.
+
+6. Kontribusi Anggota
+
+Rafi Rizky Santosa: Halaman Tambah Anggota 1 & Tambah Anggota 2
+Kinta Desvina Nur Saliha: Halaman Login & Error 404
+Zaidan Ahmad Zaindra: Halaman Landing Page & Daftar Kelas
+Priska Andriani: Halaman Daftar Anggota & Tambah Anggota Success
+
+7. Penggunaan AI
+
+AI digunakan sebagai alat bantu dalam pembuatan struktur kode, pengembangan interaksi, dan perbaikan kesalahan. Prompt yang benar-benar digunakan serta hasil perbaikan manual akan didokumentasikan dalam laporan proyek.
+
+8. Catatan Pengembangan
+
+Proyek dikembangkan secara bertahap menggunakan Git. Perubahan kode, penambahan fitur, perbaikan, dan dokumentasi dicatat melalui commit.
+
+9. Hasil Pengujian
+
+Pengujian dilakukan secara manual pada prototipe website OpenKas melalui browser lokal.
+
+1. Navigasi halaman: berfungsi.
+2. Login: berfungsi sesuai alur prototipe.
+3. Daftar anggota dan pencarian: berfungsi.
+4. Formulir tambah anggota dan modal konfirmasi berhasil: berfungsi.
+5. Tampilan responsif: diuji pada ukuran layar yang berbeda.
+
+Catatan: hasil pengujian responsivitas perlu disesuaikan dengan hasil pengujian yang benar-benar dilakukan.
