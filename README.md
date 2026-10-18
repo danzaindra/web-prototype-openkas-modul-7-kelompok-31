@@ -56,7 +56,7 @@ Pastikan [Node.js](https://nodejs.org/) sudah terpasang di komputer.
    npm run dev
    ```
 
-5. Buka alamat lokal yang ditampilkan di terminal. Alamatnya adalah [OpenKas](http://localhost:5174/web-prototype-openkas-modul-7-kelompok-31/)
+5. Buka alamat lokal yang ditampilkan di terminal. Alamatnya adalah [OpenKas](https://danzaindra.github.io/web-prototype-openkas-modul-7-kelompok-31/)
 
 ## Kontribusi Anggota
 
