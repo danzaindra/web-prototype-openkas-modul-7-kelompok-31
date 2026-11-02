@@ -297,8 +297,9 @@ function App() {
     showToast(`Data ${name} telah dihapus.`, "info");
   }
 
-  function handleLogin(event) {
+  async function handleLogin(event) {
     event.preventDefault();
+    if (isSubmitting) return;
     const newErrors = {};
     const cleanEmail = loginForm.email.trim();
     const cleanPassword = loginForm.password.trim();
@@ -321,12 +322,18 @@ function App() {
       return;
     }
     setLoginErrors({});
-    setIsLoggedIn(true);
-    setUserEmail(cleanEmail);
-    localStorage.setItem(STORAGE_KEYS.AUTH, "true");
-    localStorage.setItem("openkas_user_email", cleanEmail);
-    showToast(`Selamat datang, ${cleanEmail}!`);
-    setPage(targetPage || "anggota");
+    setIsSubmitting(true);
+    try {
+      await new Promise((resolve) => setTimeout(resolve, 800));
+      setIsLoggedIn(true);
+      setUserEmail(cleanEmail);
+      localStorage.setItem(STORAGE_KEYS.AUTH, "true");
+      localStorage.setItem("openkas_user_email", cleanEmail);
+      showToast(`Selamat datang, ${cleanEmail}!`);
+      setPage(targetPage || "anggota");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (<div className="app">
@@ -432,8 +439,19 @@ function App() {
       }} placeholder="Minimal 6 karakter (contoh: 123456)" className={loginErrors.password ? "input-error" : ""}/>
         {loginErrors.password && <small className="error-text">{loginErrors.password}</small>}
               </div>
-              <button type="submit" className="btn-primary full-width">
-        Log In ke Dashboard
+              <button
+                type="submit"
+                className="btn-primary full-width btn-login"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? (
+                  <>
+                    <span className="btn-spinner" aria-hidden="true" />
+                    Memproses...
+                  </>
+                ) : (
+                  "Log In ke Dashboard"
+                )}
               </button>
               <button type="button" className="text-button" onClick={() => navigate("home")}>
         Lihat Halaman Depan (Landing Page)
@@ -553,8 +571,16 @@ function App() {
         </div>
         <div className="table-card">
                   <div className="table-toolbar">
-          <h3>Semua Anggota</h3>
-          <input className="search-input" value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Cari nama, nomor, atau telepon..."/>
+                    <h3>Semua Anggota</h3>
+                    <div className="search-box">
+                      <span className="search-icon" aria-hidden="true">🔍</span>
+                      <input
+                        className="search-input"
+                        value={search}
+                        onChange={(e) => setSearch(e.target.value)}
+                        placeholder="Cari nama, nomor, atau telepon..."
+                      />
+                    </div>
                   </div>
                   {/* Tombol Filter Kategori Kelas & Status */}
                   <div className="filter-bar">
@@ -608,9 +634,10 @@ function App() {
                               <td>{member.className}</td>
                               <td>{member.phone}</td>
                               <td>
-                <span className={`status ${member.status === "Aktif" ? "status-active" : "status-inactive"}`}>
+                                <span className={`status ${member.status === "Aktif" ? "status-active" : "status-inactive"}`}>
+                                  <span className="status-dot" aria-hidden="true" />
                                   {member.status}
-                </span>
+                                </span>
                               </td>
                               <td>
                 <button type="button" className="text-button delete-btn" onClick={() => handleDeleteMember(member.id, member.name)}>
